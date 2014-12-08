@@ -28,7 +28,7 @@ By utilizing the hostmanager vagrant plugin the follwing URL's will be used by d
 
 ##Public URL's
     
-    http://wdev.base 
+    [http://wdev.base] (http://wdev.base 'http://wdev.base')
     
   
 ##Private URI's
