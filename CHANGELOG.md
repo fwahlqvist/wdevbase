@@ -1,5 +1,13 @@
 ### wDevBase
 
+## Version 0.2
+
+PHPMoAdmin
+    - New [url] (http://phpmoadmin.base) to access data 
+    - .htaccess file to change index
+    - PHPMoadmin
+
+
 ## Version 0.1
 
 Basic Vagrant machine
