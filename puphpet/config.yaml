@@ -100,6 +100,26 @@ apache:
             ssl_key: ''
             ssl_chain: ''
             ssl_certs_dir: ''
+        wDevBaseZr:
+            servername: phpmoadmin.base
+            serveraliases:
+                - www.phpmoadmin.base
+            docroot: /var/www/phpmoadmin
+            port: '80'
+            setenv:
+                - 'APP_ENV dev'
+            override:
+                - All
+            options:
+                - Indexes
+                - FollowSymLinks
+                - MultiViews
+            engine: php
+            custom_fragment: ''
+            ssl_cert: ''
+            ssl_key: ''
+            ssl_chain: ''
+            ssl_certs_dir: ''        
     mod_pagespeed: 0
 nginx:
     install: '0'
