@@ -1,5 +1,13 @@
 ### wDevBase
 
+## Backend Build (WebApp)
+
+Backend for WebApp
+    - Updated path for public
+    - Apigility Skeleton
+    - Composer
+
+
 ## Version 0.2
 
 PHPMoAdmin
@@ -15,4 +23,3 @@ Basic Vagrant machine
     - Mongo
     - Apache 2.4
     - PHP 5.4
-    - Composer

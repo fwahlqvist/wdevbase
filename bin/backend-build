@@ -1,0 +1,13 @@
+#!/bin/bash
+
+cd /var/www
+
+echo "Installing Apigility ..."
+git clone https://github.com/zfcampus/zf-apigility-skeleton.git webapp
+
+cd webapp
+echo "Updating composer and frameworks..."
+composer self-update
+composer update
+
+php public/index.php development enable # put the skeleton in development mode
