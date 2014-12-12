@@ -84,7 +84,7 @@ apache:
             servername: wdev.base
             serveraliases:
                 - www.wdev.base
-            docroot: /var/www/public
+            docroot: /var/www/webapp/public
             port: '80'
             setenv:
                 - 'APP_ENV dev'
