@@ -51,8 +51,21 @@ By utilizing the hostmanager vagrant plugin the follwing URL's will be used by d
 
 ## Databases
     
-By default this machine comes with the following database
+By default this machine comes with the following Mongo database
 
     database: webdevbase
     user: webdevbase
     password: 1234
+
+## ZFTool
+
+To use ZFtool [read the documenation] (http://framework.zend.com/manual/2.3/en/modules/zendtool.introduction.html) or use the following command
+
+    zftool.phar version
+    
+## Development Mode
+
+Once you have the basic installation, you need to put it in development mode:
+    
+    cd /var/www/webapp
+    php public/index.php development enable # put webapp in development mode

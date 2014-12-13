@@ -1,12 +1,19 @@
 #!/bin/bash
 
-cd /var/www
+cd /usr/local/bin 
+wget https://packages.zendframework.com/zftool.phar
+chmod 755 zftool.phar
 
+cd /var/www
 echo "Installing Apigility ..."
 git clone https://github.com/zfcampus/zf-apigility-skeleton.git webapp
 
+echo "cd webapp"
 cd webapp
+
+
 echo "Updating composer and frameworks..."
+composer install 
 composer self-update
 composer update
 

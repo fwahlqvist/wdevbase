@@ -1,11 +1,14 @@
 ### wDevBase
 
-## Backend Build (WebApp)
+
+
+## Version 0.3
 
 Backend for WebApp
     - Updated path for public
     - Apigility Skeleton
     - Composer
+    - ZFTool
 
 
 ## Version 0.2
