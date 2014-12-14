@@ -1,6 +1,11 @@
 ### wDevBase
 
+## Version 0.4
 
+Backend update to enable flexible themes
+    - ZendSkeletonApplication
+    - ZeTheme 
+    - Apigility modules
 
 ## Version 0.3
 
@@ -9,6 +14,7 @@ Backend for WebApp
     - Apigility Skeleton
     - Composer
     - ZFTool
+    - ZendDeveloperTools
 
 
 ## Version 0.2
