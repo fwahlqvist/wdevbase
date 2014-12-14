@@ -5,11 +5,39 @@ wget https://packages.zendframework.com/zftool.phar
 chmod 755 zftool.phar
 
 cd /var/www
-echo "Installing Apigility ..."
-git clone https://github.com/zfcampus/zf-apigility-skeleton.git webapp
+zftool.phar create project webapp
+
 
 echo "cd webapp"
 cd webapp
+
+composer require "zfcampus/zf-apigility:~1.0"
+composer require --dev "zfcampus/zf-apigility-admin:~1.0"
+composer require --dev "zfcampus/zf-development-mode:~2.0"
+
+#composer require "zfcampus/zf-apigility-documentation": "~1.0"
+composer require "zfcampus/zf-development-mode": "~2.0"
+composer require --dev "zfcampus/zf-apigility-admin-ui:~1.0"
+
+
+composer require "zendexperts/ze-theme:dev-master"
+composer require --dev "zendframework/zend-developer-tools:dev-master"
+echo "Copying default global.php file for zend-devloper-tools"
+cp /var/www/webapp/vendor/zendframework/zend-developer-tools/config/zenddevelopertools.local.php.dist /var/www/webapp/config/autoload/zenddevelopertools.local.php
+
+echo "Replace index with Apigility index"
+cp /var/www/dist/backend/index.php /var/www/webapp/public/index.php
+
+echo "Copying config/development.config.php.dist"
+cp /var/www/dist/backend/development.config.php.dist /var/www/webapp/config/development.config.php
+
+echo "Copying config/application.config.php.dist"
+cp /var/www/dist/backend/application.config.php.dist /var/www/webapp/config/application.config.php
+
+
+echo "Copying ze-theme.global.php.dist"
+cp /var/www/dist/backend/ze-theme.global.php.dist /var/www/webapp/config/autoload/ze-theme.global.php
+
 
 
 echo "Updating composer and frameworks..."
@@ -17,4 +45,10 @@ composer install
 composer self-update
 composer update
 
-php public/index.php development enable # put the skeleton in development mode
+#php public/index.php development enable # put the skeleton in development mode
+
+echo "Done"
+#echo "Installing Apigility ..."
+#git clone https://github.com/zfcampus/zf-apigility-skeleton.git webapp
+
+
