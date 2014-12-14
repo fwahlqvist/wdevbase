@@ -5,6 +5,10 @@ wget https://packages.zendframework.com/zftool.phar
 chmod 755 zftool.phar
 
 cd /var/www
+
+\rm -rf webapp
+
+
 zftool.phar create project webapp
 
 
