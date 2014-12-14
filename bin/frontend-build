@@ -1,0 +1,16 @@
+#!/bin/bash
+
+
+cd /var/www
+npm version     #Echo's NPM version
+
+
+
+npm install --global yo
+yo --version 
+npm install --global bower
+bower --version 
+npm install --global grunt-cli
+grunt --version
+
+npm install --global generator-angular
