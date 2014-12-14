@@ -61,7 +61,9 @@ By default this machine comes with the following Mongo database
 
 To use ZFtool [read the documenation] (http://framework.zend.com/manual/2.3/en/modules/zendtool.introduction.html) or use the following command
 
+    cd /var/www
     zftool.phar version
+    zftool.phar create module module-name /var/www/webapp
     
 ## Development Mode
 
