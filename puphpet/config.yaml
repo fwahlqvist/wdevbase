@@ -201,7 +201,7 @@ ruby:
         bsxCtwWbB6QD:
             version: ''
 nodejs:
-    install: '0'
+    install: '1'
     npm_packages: {  }
 python:
     install: '1'
