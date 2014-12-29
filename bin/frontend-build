@@ -12,5 +12,13 @@ npm install --global bower
 bower --version 
 npm install --global grunt-cli
 grunt --version
-
+npm install grunt --save-dev
 npm install --global generator-angular
+
+
+echo "yo" 
+yo --version
+echo "bower" 
+bower --version
+echo "grunt"
+grunt --version
