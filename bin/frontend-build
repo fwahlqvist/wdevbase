@@ -6,14 +6,14 @@ npm version     #Echo's NPM version
 
 
 
-npm install --global yo
+sudo npm install --global yo
 yo --version 
-npm install --global bower
+sudo npm install --global bower
 bower --version 
-npm install --global grunt-cli
+sudo npm install --global grunt-cli
 grunt --version
-npm install grunt --save-dev
-npm install --global generator-angular
+sudo npm install grunt --save-dev
+sudo npm install --global generator-angular
 
 
 echo "yo" 
