@@ -13,6 +13,9 @@ vagrantfile-local:
                 Slwy0SfdR5Px:
                     host: '8272'
                     guest: '22'
+                Slwy0Sfdwefe:
+                    host: '35729'
+                    guest: '35729'    
         post_up_message: ''
         provider:
             virtualbox:
@@ -66,7 +69,17 @@ server:
     packages: {  }
 firewall:
     install: '1'
-    rules: null
+    rules:
+        wHi9TVEKuIpY:
+            port:
+                - '35729'
+            priority: '100'
+            proto: tcp
+            action: accept
+        V3RcrsqdZ6Qx:
+            priority: '100'
+            proto: tcp
+            action: accept
 apache:
     install: '1'
     settings:
