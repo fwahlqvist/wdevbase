@@ -182,7 +182,7 @@ nginx:
             ssl_key: ''
 php:
     install: '1'
-    version: '54'
+    version: '56'
     composer: '1'
     composer_home: ''
     modules:
