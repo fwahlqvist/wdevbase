@@ -31,6 +31,15 @@ To build [phpmoadmin] (http://phpmoadmin.base) you will need to
 
     3) Run build script "sudo ./bin/db-build"
 
+
+To install npm libraries you will need to 
+
+    1) Login in with "vagrant ssh"
+    
+    2) Go to root "cd /var/www"
+
+    3) Run build script "sudo ./bin/npm-build"
+
 ## URI's
 
 By utilizing the hostmanager vagrant plugin the follwing URL's will be used by default
