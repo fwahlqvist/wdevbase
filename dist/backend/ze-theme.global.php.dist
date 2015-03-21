@@ -1,12 +1,23 @@
 <?php
+$defaultTheme = 'wdev-angularjs-theme';
+
 return array(
     'ze_theme' => array(
-        'default_theme' => 'default',
+        'default_theme' => $defaultTheme,
         'theme_paths' => array(
             __DIR__ . '/../../themes/'
         ),
         'adapters' => array(
             'ZeTheme\Adapter\Configuration',
+        ),
+    ),
+    'asset_manager' => array(
+        'resolver_configs' => array(
+            'paths' => array(
+                __DIR__ . '/../../themes/' . $defaultTheme . '/',
+                __DIR__ . '/../../themes/' . $defaultTheme . '/app',
+                
+            ),
         ),
     ),
 );

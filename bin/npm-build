@@ -1,0 +1,26 @@
+#!/bin/bash
+        
+npm install -g assemble
+npm install -g bower
+npm install -g compass
+npm install -g generator-generator
+npm install -g generator-angular-ui-router
+npm install -g generator-angular 
+npm install -g grunt
+npm install -g grunt-cli
+npm install -g grunt-concurrent
+npm install -g grunt-contrib-compass
+npm install -g grunt-contrib-compress
+npm install -g grunt-contrib-imagemin
+npm install -g grunt-contrib-sass
+npm install -g grunt-conventional-changelog
+npm install -g jasmine-core
+npm install -g jasmine-node
+npm install -g karma
+npm install -g karma-cli
+npm install -g grunt-karma
+npm install -g phantomjs
+npm install -g yo
+npm install -g gulp
+npm install -g node-sass
+npm install -g gulp
